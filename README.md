@@ -1,12 +1,12 @@
 # Enactus website
 To add contributions/code
-1) Clone the repository.
-2) Add your contribution code to the cloned repo.
-3) Create a new branch named dev-*yourname* example: dev-jyotin.
-4) Perform your changes in this branch.
-5) Create a merge request to merge with the master branch.
+1) Fork the repository
+2) Clone the forked repository to the system
+3) Add your contributions in this cloned repository
+4) Push you changes to the forked repo
+5) Create a Pull request to merge into the orginial repository
 
-To schedule contributions
+To schedule contributionse
 1) Go to https://github.com/users/amaan-aly246/projects/3.
 2) Take a feature in 'ToDo' list and put it in 'Pending' list.
 3) When a feature is added to master branch put it in 'Done' list.
