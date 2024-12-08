@@ -13,3 +13,8 @@ To schedule contributionse
 1. Go to https://github.com/users/amaan-aly246/projects/3.
 2. Take a feature in 'ToDo' list and put it in 'Pending' list.
 3. When a feature is added to master branch put it in 'Done' list.
+
+For adding pages
+
+1. Go to src/pages and add your code to the corresponding file page
+2. Use src/components to add your custom components
