@@ -1,15 +1,19 @@
-
-import './App.css'
-
+import "./App.css";
+import Projects from "./pages/Projects";
+import Navbar from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
 function App() {
-
+  /* For Home page add <Route path='/' element={<Home/>} */
   return (
     <>
-      <h1 className="text-3xl  underline bg-slate-500">
-      Enactus website
-    </h1>
+      <div className="bg-[url(../images/Background.png)]">
+        <Navbar />
+        <Routes>
+          <Route path="/Projects" element={<Projects />} />
+        </Routes>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
