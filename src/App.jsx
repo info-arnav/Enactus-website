@@ -1,15 +1,19 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Team from './pages/team';
+import './App.css';
 
-import './App.css'
-
-function App() {
-
+const App = () => {
   return (
-    <>
-      <h1 className="text-3xl  underline bg-slate-500">
-      Enactus website
-    </h1>
-    </>
-  )
+   <>
+      <div className="bg-[url('images/image.png')] bg-contain bg-repeat bg-opacity-75 min-h-screen h-auto w-full">
+        <Router>
+        <Routes>
+          <Route path="/team" element={<Team />} />
+        </Routes>
+      </Router></div>
+   </>
+  );
 }
 
-export default App
+export default App;
