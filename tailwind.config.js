@@ -7,6 +7,9 @@ export default {
         enacblk: "#282828",
       },
     },
+    fontFamily: {
+      moderniz:['MODERNIZ'],
+    },
   },
   plugins: [],
 };
