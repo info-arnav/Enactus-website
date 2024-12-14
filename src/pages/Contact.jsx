@@ -71,6 +71,8 @@ export default function Contact() {
                   id="email"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2"
                   placeholder="johndoe@email.com"
+                  // alt: https://stackoverflow.com/questions/201323/how-can-i-validate-an-email-address-using-a-regular-expression
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                   required
                 />
               </div>
