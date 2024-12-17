@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { FaAlignJustify, FaXmark } from "react-icons/fa6";
-// eslint-disable-next-line react/prop-types
 function Button({ state, value, handleClick }) {
   return (
     <>
