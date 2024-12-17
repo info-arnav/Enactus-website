@@ -8,7 +8,9 @@ export default {
       },
     },
     fontFamily: {
-      moderniz:['MODERNIZ'],
+      moderniz: ["MODERNIZ"],
+      montserrat: ["Montserrat"],
+      lemonmilk: ["LEMON MILK"],
     },
   },
   plugins: [],
