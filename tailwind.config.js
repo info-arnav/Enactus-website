@@ -8,9 +8,9 @@ export default {
       },
     },
     fontFamily: {
-      'moderniz':['MODERNIZ'],
-      'montserrat': ['Montserrat'],
-      'lemon':['Lemon/Milk'],
+      moderniz: ["MODERNIZ"],
+      montserrat: ["Montserrat"],
+      lemon: ["Lemon/Milk"],
     },
   },
   plugins: [],
