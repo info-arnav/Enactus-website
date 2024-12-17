@@ -58,7 +58,7 @@ export default function Navbar({ path }) {
     <>
       <div
         className={
-          "z-10 fixed min-h-[100%] w-[150px] md:w-[100%] md:flex md:flex-row justify-between md:h-12 md:static md:bg-transparent " +
+          "z-[11] fixed min-h-[100%] w-[150px] md:w-[100%] md:flex md:flex-row justify-between md:h-12 md:static md:bg-transparent " +
           (navExtend ? "bg-white" : "bg-transparent")
         }
       >
