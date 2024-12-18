@@ -1,5 +1,6 @@
 import CarouselComplete from "../components/AchievementsCarousel";
 import News from "../components/News";
+import Footer from "../components/Footer";
 export default function Achievements() {
   return (
     <>
@@ -8,6 +9,7 @@ export default function Achievements() {
       </div>
       <CarouselComplete />
       <News />
+      <Footer />
     </>
   );
 }

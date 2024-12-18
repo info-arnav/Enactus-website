@@ -10,7 +10,7 @@ export default {
     fontFamily: {
       moderniz: ["MODERNIZ"],
       montserrat: ["Montserrat"],
-      lemon: ["Lemon/Milk"],
+      lemon: ["LEMON MILK"],
     },
   },
   plugins: [],

@@ -9,7 +9,7 @@ function Button({ state, value, handleClick }) {
       <Link
         to={"/" + (value == "Home" ? "" : value)}
         className={
-          "flex flex-col md:inline-block font-lemonmilk text-[10px] md:text-[sm] p-4 " +
+          "flex flex-col md:inline-block font-lemon text-[10px] md:text-[13px] p-5 md:h-16 md:align-middle  " +
           (state == "true"
             ? "bg-enacblk text-white"
             : "bg-transparent text-enacblk hover:bg-enacblk hover:text-white transition ease-in")
@@ -58,52 +58,63 @@ export default function Navbar({ path }) {
     <>
       <div
         className={
-          "z-10 fixed min-h-[100%] w-[150px] md:w-[100%] md:flex md:flex-row justify-between md:h-12 md:static md:bg-transparent " +
-          (navExtend ? "bg-white" : "bg-transparent")
+          (navExtend
+            ? "bg-[rgba(114,114,114,0.4)] min-w-[100%] fixed min-h-[100%] "
+            : "") + "z-[100] md:z-[0]"
         }
       >
-        <img src="../images/enacLogo.jpg" className="hidden md:inline-block" />
-        <div
-          className="md:hidden mt-4 ml-4 bg-white w-[3.25rem] p-4 rounded-[200px] cursor-pointer"
-          onClick={extend}
-        >
-          {navExtend ? (
-            <FaXmark className="text-xl color-enacblk" />
-          ) : (
-            <FaAlignJustify className="text-xl color-enacblk" />
-          )}
-        </div>
         <div
           className={
-            (navExtend ? "block" : "hidden") +
-            " md:block transition-ease-in-out"
+            "fixed min-h-[100%] w-[150px] md:w-[100%] md:flex md:flex-row justify-between md:h-16 md:static md:bg-transparent " +
+            (navExtend ? "bg-white" : "bg-transparent")
           }
         >
-          <Button
-            state={active[0]}
-            value="Home"
-            handleClick={() => handler(0)}
+          <img
+            src="../images/enacLogo.jpg"
+            className="hidden md:inline-block"
           />
-          <Button
-            state={active[1]}
-            value="Projects"
-            handleClick={() => handler(1)}
-          />
-          <Button
-            state={active[2]}
-            value="Contact"
-            handleClick={() => handler(2)}
-          />
-          <Button
-            state={active[3]}
-            value="Achievements"
-            handleClick={() => handler(3)}
-          />
-          <Button
-            state={active[4]}
-            value="Team"
-            handleClick={() => handler(4)}
-          />
+          <div
+            className="md:hidden mt-4 ml-4 bg-white w-[3.25rem] p-4 rounded-[200px] cursor-pointer"
+            onClick={extend}
+          >
+            {navExtend ? (
+              <FaXmark className="text-xl color-enacblk" />
+            ) : (
+              <FaAlignJustify className="text-xl color-enacblk" />
+            )}
+          </div>
+          <div
+            className={
+              (navExtend ? "block" : "hidden") +
+              " md:block transition-ease-in-out"
+            }
+          >
+            <Button
+              state={active[0]}
+              value="Home"
+              handleClick={() => handler(0)}
+            />
+            <Button
+              state={active[1]}
+              value="Projects"
+              handleClick={() => handler(1)}
+            />
+            <Button
+              state={active[2]}
+              value="Contact"
+              handleClick={() => handler(2)}
+            />
+            <Button
+              state={active[3]}
+              value="Achievements"
+              handleClick={() => handler(3)}
+            />
+            <Button
+              state={active[4]}
+              value="Team"
+              handleClick={() => handler(4)}
+            />
+          </div>
         </div>
       </div>
     </>

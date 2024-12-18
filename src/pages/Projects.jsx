@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 function ProjectCell() {
   return (
     <>
@@ -27,6 +28,7 @@ export default function Projects() {
       <ProjectCell />
       <ProjectCell />
       <ProjectCell />
+      <Footer />
     </>
   );
 }
