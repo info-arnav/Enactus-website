@@ -6,7 +6,11 @@ To add contributions/code
 2. Clone the forked repository to the system
 3. Add your contributions in this cloned repository
 4. Push you changes to the forked repo
-5. Create a Pull request to merge into the orginial repository
+5. Create a Pull request to merge into the  *dev* branch of the orginial repository.
+
+**Note:**
+1. Don't push into the main branch of the original repo
+2. Pull updated code from original repo's `main` to forked repo's `main`.
 
 To schedule contributions
 
