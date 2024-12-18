@@ -8,7 +8,7 @@ To add contributions/code
 4. Push you changes to the forked repo
 5. Create a Pull request to merge into the orginial repository
 
-To schedule contributionse
+To schedule contributions
 
 1. Go to https://github.com/users/amaan-aly246/projects/3.
 2. Take a feature in 'ToDo' list and put it in 'Pending' list.
