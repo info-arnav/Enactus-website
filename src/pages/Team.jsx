@@ -1,7 +1,7 @@
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
-
+import Footer from "../components/Footer";
 const Team = () => {
   const teamMembers = [
     {
@@ -131,6 +131,7 @@ const Team = () => {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   );
 };

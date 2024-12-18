@@ -39,6 +39,8 @@ export default function CarouselComplete() {
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     swipeToSlide: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
   };
   return (
     <>
@@ -57,7 +59,7 @@ export default function CarouselComplete() {
                   />
                 </div>
                 <div className="flex flex-col items-center">
-                  <h2 className="py-4 md:py-8 font-bold text-lg md:text-xl font-lemonmilk">
+                  <h2 className="py-4 md:py-8 font-bold text-lg md:text-xl font-lemon">
                     {item.sub}
                   </h2>
                   <p className="text-xs font-montserrat">{item.text}</p>
