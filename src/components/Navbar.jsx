@@ -62,7 +62,7 @@ export default function Navbar({ path }) {
           (navExtend ? "bg-white" : "bg-transparent")
         }
       >
-        <img src="../images/enacLogo.jpg" className="hidden md:inline-block" />
+        <img src="../images/enacLogo.jpg" className="hidden md:inline-block h-full" />
         <div
           className="md:hidden mt-4 ml-4 bg-white w-[3.25rem] p-4 rounded-[200px] cursor-pointer"
           onClick={extend}

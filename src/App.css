@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'moderniz';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''), url('https://fonts.cdnfonts.com/s/115491/Moderniz.woff') format('woff');
+}

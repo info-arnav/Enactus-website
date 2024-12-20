@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Achievements from "./pages/Achievements";
 import Team from "./pages/Team";
 import { Route, Routes, useLocation } from "react-router-dom";
+import Footer from "./components/Footer";
 function App() {
   const location = useLocation();
   const { pathname } = location;
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Achievements" element={<Achievements />} />
           <Route path="/Team" element={<Team />} />
         </Routes>
+        <Footer />
       </div>
     </>
   );
