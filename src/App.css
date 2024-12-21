@@ -3,8 +3,33 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'moderniz';
-    font-style: normal;
-    font-weight: 900;
-    src: local(''), url('https://fonts.cdnfonts.com/s/115491/Moderniz.woff') format('woff');
+  font-family: "moderniz";
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local(""),
+    url("https://fonts.cdnfonts.com/s/115491/Moderniz.woff") format("woff");
+}
+
+/* Change scrollbar color to enactus Yellow */
+
+/* CHROME, SAFARI */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ffbf10;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  /* transparent */
+  /* will work when content is not full width */
+  background-color: #f3f8f200;
+}
+
+/* FIREFOX */
+/* For Firefox */
+html {
+  scrollbar-width: auto; /* Scrollbar width */
+  scrollbar-color: #ffbf10 #f3f8f200; /* Thumb and track colors */
 }
