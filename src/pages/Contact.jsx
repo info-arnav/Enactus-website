@@ -1,13 +1,12 @@
 export default function Contact() {
   return (
-    <div className="my-16 px-8 w-full flex justify-center">
-      <div className="w-max max-w-4xl flex flex-col space-y-8">
-        <section className="w-full flex flex-col justify-center space-y-4">
-          {/* @TODO: Center this h2!! */}
-          <h2 className="text-2xl lg:text-5xl font-semibold w-max mx-auto">
-            Contact Us
-          </h2>
-          <p className="text-center">
+    <div className="w-full flex flex-col justify-center">
+      <div className="w-full flex flex-col space-y-8 justify-center">
+        <div className="text-center font-moderniz border-t-[10px] md:border-t-[25px] border-b-[10px] md:border-b-[25px] py-[6%] border-enacblk text-xl md:text-5xl font-bold bg-[url('../images/YellowBG.png')]">
+          Contact US
+        </div>
+        <section className="w-full flex flex-col space-y-4 max-w-4xl mx-auto justify-center">
+          <p className="text-center px-8">
             We'd love to hear from you! <br />
             Whether you have a question, want to collaborate, or simply wish to
             learn more about the work we do at Enactus NSUT, feel free to reach
@@ -21,7 +20,7 @@ export default function Contact() {
             .
           </p>
         </section>
-        <div className="bg-neutral-100 p-8 border border-neutral-300 rounded-md shadow-md">
+        <div className="bg-neutral-100 p-8 border border-neutral-300 rounded-md shadow-md w-max max-w-4xl px-8 mx-auto">
           <form className="flex flex-col space-y-4 justify-center">
             <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 space-x-0 lg:space-x-4 w-full">
               <div className=" w-full lg:w-1/2">
