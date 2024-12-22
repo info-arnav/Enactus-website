@@ -1,4 +1,4 @@
-# Enactus NSUT website
+ # <img src="./images/favicon.ico" alt="Enactus logo" width="60" height="60">Enactus NSUT website
 
 Note: 
 - **Collaborators are invite only.**
