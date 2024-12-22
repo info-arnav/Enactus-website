@@ -3,11 +3,13 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
+import enactus_logo from "../../images/symbol_enactus.png";
+
 export default function Footer() {
 
     return  <footer className="w-full flex flex-wrap gap-10 p-8 text-enacblk">
     <div className="w-full md:w-1/6 flex flex-col items-center md:items-start">
-      <img src="images/symbol_enactus.png" alt="Logo" className="h-12" />
+      <img src={enactus_logo} alt="Logo" className="h-12" />
       <div className="flex gap-3 text-gray-200 mt-4">
         <FacebookIcon className="text-blue-600 scale-125" />
         <InstagramIcon className="text-pink-500 scale-110" />
