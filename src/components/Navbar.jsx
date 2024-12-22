@@ -3,6 +3,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { FaAlignJustify, FaXmark } from "react-icons/fa6";
+
+import enac_logo from "../../images/enacLogo.jpg";
+
 function Button({ state, value, handleClick }) {
   return (
     <>
@@ -62,7 +65,7 @@ export default function Navbar({ path }) {
           (navExtend ? "bg-white" : "bg-transparent")
         }
       >
-        <img src="../images/enacLogo.jpg" className="hidden md:inline-block h-full" />
+        <img src={enac_logo} className="hidden md:inline-block h-full" />
         <div
           className="md:hidden mt-4 ml-4 bg-white w-[3.25rem] p-4 rounded-[200px] cursor-pointer"
           onClick={extend}
