@@ -12,7 +12,11 @@ function App() {
   const { pathname } = location;
   return (
     <>
-      <div className="bg-[url(../images/Background.png)]">
+    {/* background-image  */}
+      {/* <div className="bg-[url(../images/Background.png)]"> */}
+
+      {/* background-colour */}
+      <div className="bg-white">
         <Navbar path={pathname} />
         <Routes>
           <Route path="/" element={<Home />} />
