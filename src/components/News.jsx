@@ -1,4 +1,4 @@
-import { slides } from "/src/data/news.json";
+import { slides } from "../Database/news.json";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,7 +6,7 @@ import "./News.css";
 export default function News() {
   var settings = {
     infinite: true,
-    speed: 500,
+    speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplaySpeed: 5000,
