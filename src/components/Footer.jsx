@@ -4,6 +4,7 @@ import XIcon from "@mui/icons-material/X";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+  const date = new Date();
   return (
     <footer className="w-full flex flex-wrap gap-10 p-8 text-enacblk">
       <div className="w-full md:w-1/6 flex flex-col items-center md:items-start">
@@ -58,7 +59,9 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <p className="text-[rgba(120,120,120,1)]">© 2024 Enactus NSUT</p>
+      <p className="text-[rgba(120,120,120,1)]">
+        © {date.getFullYear()} Enactus NSUT
+      </p>
     </footer>
   );
 }
