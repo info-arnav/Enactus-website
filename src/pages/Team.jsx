@@ -1,95 +1,17 @@
+import React, { useEffect } from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
-
-const Team = () => {
-  const teamMembers = [
-    {
-      name: "Alice Smith",
-      role: "Frontend Developer",
-      description:
-        "Passionate about creating intuitive user interfaces and seamless user experiences.",
-      image:
-        "https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3",
-      facebook: "https://www.facebook.com/alice.smith",
-      instagram: "https://www.instagram.com/alice.smith",
-      twitter: "https://www.twitter.com/alice_smith",
-      github: "https://www.github.com/alicesmith",
-    },
-    {
-      name: "Bob Johnson",
-      role: "Backend Developer",
-      description:
-        "Specializes in creating efficient and scalable backend systems.",
-      image:
-        "https://plus.unsplash.com/premium_photo-1664536392896-cd1743f9c02c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3",
-      facebook: "https://www.facebook.com/bob.johnson",
-      instagram: "https://www.instagram.com/bob.johnson",
-      twitter: "https://www.twitter.com/bob_johnson",
-      github: "https://www.github.com/bobjohnson",
-    },
-    {
-      name: "Charlie Davis",
-      role: "DevOps Engineer",
-      description:
-        "Expert in automating and optimizing infrastructure for cloud-based applications.",
-      image:
-        "https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3",
-      facebook: "https://www.facebook.com/charlie.davis",
-      instagram: "https://www.instagram.com/charlie.davis",
-      twitter: "https://www.twitter.com/charliedavis",
-      github: "https://www.github.com/charliedavis",
-    },
-    {
-      name: "Dana Evans",
-      role: "UI/UX Designer",
-      description:
-        "Combines creative design with user research to create visually appealing and user-friendly interfaces.",
-      image:
-        "https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3",
-      facebook: "https://www.facebook.com/dana.evans",
-      instagram: "https://www.instagram.com/dana.evans",
-      twitter: "https://www.twitter.com/danaevans",
-      github: "https://www.github.com/danaevans",
-    },
-    {
-      name: "Evan Thomas",
-      role: "Data Scientist",
-      description:
-        "Skilled in machine learning and data analysis, focusing on extracting insights from complex data sets.",
-      image:
-        "https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3",
-      facebook: "https://www.facebook.com/evan.thomas",
-      instagram: "https://www.instagram.com/evan.thomas",
-      twitter: "https://www.twitter.com/evanthomas",
-      github: "https://www.github.com/evanthomas",
-    },
-    {
-      name: "Fiona Lewis",
-      role: "Project Manager",
-      description:
-        "Expert in agile methodologies and project management, ensuring timely and efficient delivery of projects.",
-      image:
-        "https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3",
-      facebook: "https://www.facebook.com/fiona.lewis",
-      instagram: "https://www.instagram.com/fiona.lewis",
-      twitter: "https://www.twitter.com/fionalewis",
-      github: "https://www.github.com/fionalewis",
-    },
-  ];
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+// ScrollSmoother.create({
+//   smooth: 1,
+//   effects: true,
+// });
+const Card=({member,index})=>{
   return (
-    <div className="bg-transparent text-gray-800 py-10">
-      <div className="text-center mb-10 font-moderniz">
-        <h1 className="text-3xl mb-4 text-yellow-500">OUR TEAM</h1>
-        <p className="text-sm text-zinc-600  max-w-screen mx-auto px-8 lg:px-10">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 h-auto w-full mx-auto items-center justify-center p-8">
-  {teamMembers.map((member, index) => (
     <div
       key={index}
       className="h-auto w-full max-w-[90vw] sm:max-w-[45vw] lg:max-w-[30vw] relative flex justify-center flex-col text-left bg-red-700 rounded-2xl overflow-hidden transform transition hover:shadow-lg mx-auto"
@@ -127,10 +49,146 @@ const Team = () => {
         </div>
       </div>
     </div>
-  ))}
-</div>
+  );
+}
 
-    </div>
+const Team = () => {
+
+  useGSAP(()=>{
+    gsap.to(".vice-pres", {
+      scrollTrigger: {
+        trigger: ".vice-pres",
+        start: "top top",
+        end: "10% top",
+        scrub: 1,
+        pin: true,
+        // markers: true,
+      },
+      scale: 4,
+      duration: 1,
+    }),
+    gsap.to(".vice-pres2", {
+      scrollTrigger: {
+        trigger: ".vice-pres2",
+        start: "top top",
+        end: "10% top",
+        scrub: 1,
+        pin: true,
+        // markers: true,
+      },
+      scale: 4,
+      duration: 1,
+    })
+  })
+
+  const teamMembers = [
+    {
+      name: "Alice Smith",
+      role: "Frontend Developer",
+      description:
+        "Passionate about creating intuitive user interfaces and seamless user experiences.",
+      image:
+        "https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3",
+      facebook: "https://www.facebook.com/alice.smith",
+      instagram: "https://www.instagram.com/alice.smith",
+      twitter: "https://www.twitter.com/alice_smith",
+      github: "https://www.github.com/alicesmith",
+    },
+    {
+      name: "Bob Johnson",
+      role: "Backend Developer",
+      description:
+        "Specializes in creating efficient and scalable backend systems.",
+      image:
+        "https://plus.unsplash.com/premium_photo-1664536392896-cd1743f9c02c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3",
+      facebook: "https://www.facebook.com/bob.johnson",
+      instagram: "https://www.instagram.com/bob.johnson",
+      twitter: "https://www.twitter.com/bob_johnson",
+      github: "https://www.github.com/bobjohnson",
+    },
+    {
+      name: "Charlie Davis",
+      role: "DevOps Engineer",
+      description:
+        "Expert in automating and optimizing infrastructure for cloud-based applications.",
+      image:
+        "https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3",
+      facebook: "https://www.facebook.com/charlie.davis",
+      instagram: "https://www.instagram.com/charlie.davis",
+      twitter: "https://www.twitter.com/charliedavis",
+      github: "https://www.github.com/charliedavis",
+    },
+    // {
+    //   name: "Dana Evans",
+    //   role: "UI/UX Designer",
+    //   description:
+    //     "Combines creative design with user research to create visually appealing and user-friendly interfaces.",
+    //   image:
+    //     "https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3",
+    //   facebook: "https://www.facebook.com/dana.evans",
+    //   instagram: "https://www.instagram.com/dana.evans",
+    //   twitter: "https://www.twitter.com/danaevans",
+    //   github: "https://www.github.com/danaevans",
+    // },
+    // {
+    //   name: "Evan Thomas",
+    //   role: "Data Scientist",
+    //   description:
+    //     "Skilled in machine learning and data analysis, focusing on extracting insights from complex data sets.",
+    //   image:
+    //     "https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3",
+    //   facebook: "https://www.facebook.com/evan.thomas",
+    //   instagram: "https://www.instagram.com/evan.thomas",
+    //   twitter: "https://www.twitter.com/evanthomas",
+    //   github: "https://www.github.com/evanthomas",
+    // },
+    // {
+    //   name: "Fiona Lewis",
+    //   role: "Project Manager",
+    //   description:
+    //     "Expert in agile methodologies and project management, ensuring timely and efficient delivery of projects.",
+    //   image:
+    //     "https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3",
+    //   facebook: "https://www.facebook.com/fiona.lewis",
+    //   instagram: "https://www.instagram.com/fiona.lewis",
+    //   twitter: "https://www.twitter.com/fionalewis",
+    //   github: "https://www.github.com/fionalewis",
+    // },
+  ];
+
+  return (
+    <div className="team-section text-gray-800 h-auto ">
+     <div className="vice-pres text-center font-moderniz h-[90vh] flex flex-col justify-center items-center text-3xl " >VICE PRESIDENTS</div>
+     <div  className="text-center font-moderniz h-auto flex flex-col justify-center items-center " >
+        <h1 className="text-3xl mb-4 text-yellow-500">VICE PRESIDENTS</h1>
+        <p className="text-sm text-zinc-600  max-w-screen mx-auto px-8 lg:px-10">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 h-auto w-full mx-auto items-center justify-center p-8">
+        {teamMembers.map((member, index) => (
+            <Card member={member} index={index}/>
+        ))}
+      </div>
+     </div>
+     <div className="vice-pres2 text-center font-moderniz h-[90vh] flex flex-col justify-center items-center text-3xl" >PRESIDENT</div>
+     <div  className="ext-center font-moderniz h-auto flex flex-col justify-center items-center" >
+        <h1 className="text-3xl mb-4 text-yellow-500">PRESIDENTS</h1>
+        <p className="text-sm text-zinc-600  max-w-screen mx-auto px-8 lg:px-10">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 h-auto w-full mx-auto items-center justify-center p-8">
+        {teamMembers.map((member, index) => (
+            <Card member={member} index={index}/>
+        ))}
+      </div>
+     </div>
+     </div>
   );
 };
 
