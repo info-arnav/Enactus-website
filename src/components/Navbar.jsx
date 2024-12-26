@@ -62,7 +62,7 @@ export default function Navbar({ path }) {
   return (
     <div
       className={
-        "md:min-h-[0%] md:min-w-[0%] min-h-[100%] min-w-[100%] md:static fixed md: z-0 z-10 md:bg-transparent " +
+        "md:min-h-[0%] md:min-w-[0%] min-h-[100%] min-w-[100%] md:static fixed md:z-0 z-10 md:bg-transparent " +
         (navExtend ? "bg-[rgba(0,0,0,0.8)]" : "")
       }
       onClick={() => {
@@ -78,7 +78,7 @@ export default function Navbar({ path }) {
           (navExtend ? "bg-white" : "bg-transparent")
         }
       >
-        <img src={enac_logo} className="hidden md:inline-block h-full" />
+        <img src={enac_logo} className="hidden md:inline-block h-16 -mt-2" />
         <div
           className="md:hidden mt-4 ml-4 bg-white w-[3.25rem] p-4 rounded-[200px] cursor-pointer"
           onClick={extend}
