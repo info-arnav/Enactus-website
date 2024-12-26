@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { teamMembers } from "../Database/Db";
-import Card from "../../src/Components/Card.jsx";
+import Card from "../Components/Card";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 // ScrollSmoother.create({
 //   smooth: 1,
