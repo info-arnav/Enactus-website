@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { slides } from "../data/achievements.json";
+import { slides } from "../Database/achievements.json";
 import { BsArrowRightCircleFill, BsArrowLeftCircleFill } from "react-icons/bs";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
