@@ -13,7 +13,7 @@ function App() {
   return (
     <>
     {/* background-image  */}
-      <div className="bg-[url(../images/Background.png)]">
+      <div className="bg-[url(/images/Background.png)]">
 
       {/* background-colour */}
       {/* <div className="bg-white"> */}
