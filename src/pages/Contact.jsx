@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <div className="w-full flex flex-col justify-center">
       <div className="w-full flex flex-col space-y-8 justify-center">
-        <div className="text-center font-moderniz border-t-[10px] md:border-t-[25px] border-b-[10px] md:border-b-[25px] py-[6%] border-enacblk text-xl md:text-5xl font-bold bg-[url('../images/YellowBG.png')]">
+        <div className="text-center font-moderniz border-t-[10px] md:border-t-[25px] border-b-[10px] md:border-b-[25px] py-[6%] border-enacblk text-xl md:text-5xl font-bold bg-[url('/images/YellowBG.png')]">
           Contact US
         </div>
         <section className="w-full flex flex-col space-y-4 max-w-4xl mx-auto justify-center">

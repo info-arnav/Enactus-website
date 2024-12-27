@@ -1,22 +1,22 @@
 {
   "slides": [
     {
-      "image": "../images/enacLogo.jpg",
+      "image": "/images/enacLogo.jpg",
       "sub": "Sample1",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque minima autem aperiam deserunt doloremque, eligendi velit numquam cupiditate nulla, voluptas vel repellendus enim, architecto perspiciatis sed quas earum aspernatur."
     },
     {
-      "image": "../images/enacLogo.jpg",
+      "image": "/images/enacLogo.jpg",
       "sub": "Sample2",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque minima autem aperiam deserunt doloremque, eligendi velit numquam cupiditate nulla, voluptas vel repellendus enim, architecto perspiciatis sed quas earum aspernatur."
     },
     {
-      "image": "../images/YellowBG.png",
+      "image": "/images/YellowBG.png",
       "sub": "Sample3",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque minima autem aperiam deserunt doloremque, eligendi velit numquam cupiditate nulla, voluptas vel repellendus enim, architecto perspiciatis sed quas earum aspernatur."
     },
     {
-      "image": "../images/YellowBG.png",
+      "image": "/images/YellowBG.png",
       "sub": "Sample4",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque minima autem aperiam deserunt doloremque, eligendi velit numquam cupiditate nulla, voluptas vel repellendus enim, architecto perspiciatis sed quas earum aspernatur."
     }

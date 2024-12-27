@@ -1,9 +1,9 @@
-import partner_1 from "../../images/partners/partner-1.jpeg";
-import partner_2 from "../../images/partners/partner-2.png";
-import partner_3 from "../../images/partners/partner-3.jpeg";
+import partner_1 from "/images/partners/partner-1.jpeg";
+import partner_2 from "/images/partners/partner-2.png";
+import partner_3 from "/images/partners/partner-3.jpeg";
 
-import team_home from "../../images/team_home.png"
-import enactus_about from "../../images/Enactus_about.jpg"
+import team_home from "/images/team_home.png"
+import enactus_about from "/images/Enactus_about.jpg"
 
 export default function Home() {
   return (

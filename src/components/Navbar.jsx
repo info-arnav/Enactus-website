@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaAlignJustify, FaXmark } from "react-icons/fa6";
 
-import enac_logo from "../../images/enacLogo.jpg";
+import enac_logo from "/images/enacLogo.jpg";
 
 function Button({ state, value, handleClick }) {
   return (
