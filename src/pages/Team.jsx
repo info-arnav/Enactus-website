@@ -134,7 +134,7 @@ const Team = () => {
 
   return (
     <div className="team-section text-gray-800 h-auto ">
-      <div className=" md:block text-center font-moderniz border-t-[10px] md:border-t-[25px] border-b-[10px] md:border-b-[25px] py-[6%] border-enacblk text-xl md:text-5xl font-bold bg-[url('../images/YellowBG.png')]">
+      <div className=" md:block text-center font-moderniz border-t-[10px] md:border-t-[25px] border-b-[10px] md:border-b-[25px] py-[6%] border-enacblk text-xl md:text-5xl font-bold bg-[url('/images/YellowBG.png')]">
         OUR TEAM
       </div>
       <div

@@ -3,12 +3,14 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
 import { Link } from "react-router-dom";
 
+import enac_symbol from "/images/symbol_enactus.png";
+
 export default function Footer() {
   const date = new Date();
   return (
     <footer className="w-full flex flex-wrap gap-10 p-8 text-enacblk">
       <div className="w-full md:w-1/6 flex flex-col items-center md:items-start">
-        <img src="images/symbol_enactus.png" alt="Logo" className="h-12" />
+        <img src={enac_symbol} alt="Logo" className="h-12" />
         <div className="flex gap-3 text-gray-200 mt-4">
           <a
             href="https://in.linkedin.com/company/enactus-nsut"
