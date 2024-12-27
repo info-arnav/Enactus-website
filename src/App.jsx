@@ -17,7 +17,7 @@ function App() {
 
       {/* background-colour */}
       {/* <div className="bg-white"> */}
-        <Navbar path={pathname} />
+      <Navbar path={pathname} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Projects" element={<Projects />} />
