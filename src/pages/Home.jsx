@@ -39,7 +39,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="w-full flex flex-col md:flex-row h-[28vh] md:h-[34vh] lg:h-[38vh]">
+      <div className="w-full flex flex-col md:flex-row h-[28vh] md:h-[34vh] lg:h-[38vh] font-moderniz">
         <div className="flex-1 bg-[#FFC000] text-enacblk flex justify-center items-center text-center py-4 md:py-0">
           UPLIFT
         </div>

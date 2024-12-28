@@ -62,7 +62,7 @@ export default function Navbar({ path }) {
   return (
     <div
       className={
-        "md:min-h-[0%] md:min-w-[0%] min-h-[100%] min-w-[100%] md:static fixed md:z-0 z-10 md:bg-transparent " +
+        "md:min-h-[1%] md:min-w-[0%] min-h-[100%] min-w-[100%] md:static fixed md:z-0 z-10 md:bg-transparent " +
         (navExtend ? "bg-[rgba(0,0,0,0.8)]" : "")
       }
       onClick={() => {
@@ -89,7 +89,7 @@ export default function Navbar({ path }) {
             <FaAlignJustify className="text-xl color-enacblk" />
           )}
         </div>
-        <div className={(navExtend ? "block" : "hidden") + " inner md:block"}>
+        <div className={(navExtend ? "block" : "hidden") + " inner md:block font-moderniz"}>
           <Button
             state={active[0]}
             value="Home"
