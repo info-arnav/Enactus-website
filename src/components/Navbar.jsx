@@ -1,10 +1,8 @@
-/* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import { FaAlignJustify, FaXmark } from "react-icons/fa6";
 
-import enac_logo from "../../images/enacLogo.jpg";
+import enac_logo from "/images/enacLogo.jpg";
 
 function Button({ state, value, handleClick }) {
   return (
@@ -60,36 +58,42 @@ export default function Navbar({ path }) {
     setActive(activeList);
   };
   return (
-    <div
-      className={
-        "md:min-h-[1%] md:min-w-[0%] min-h-[100%] min-w-[100%] md:static fixed md:z-0 z-10 md:bg-transparent " +
-        (navExtend ? "bg-[rgba(0,0,0,0.8)]" : "")
-      }
-      onClick={() => {
-        if (navExtend && !innerClicked) {
-          setNavExtend(false);
-          innerClicked = false;
-        }
-      }}
-    >
+    <nav className={`fixed top-0 w-full font-moderniz z-50 md:relative ${navExtend ? "h-full" : "h-auto"}`}>
+      {navExtend && (
+        <div
+          className="fixed inset-0 bg-[rgba(0,0,0,0.8)] z-40"
+          onClick={() => {
+            if (!innerClicked) {
+              setNavExtend(false);
+              innerClicked = false;
+            }
+          }}
+        />
+      )}
+
       <div
         className={
-          "z-10 fixed min-h-[100%] w-[150px] md:w-[100%] md:flex md:flex-row justify-between md:h-12 md:static md:bg-transparent " +
-          (navExtend ? "bg-white" : "bg-transparent")
+          `fixed z-50 md:relative md:flex md:flex-row justify-between md:h-12 ${navExtend
+            ? "bg-white min-h-[100vh] w-[150px]"
+            : "bg-transparent w-auto"}`
         }
       >
         <img src={enac_logo} className="hidden md:inline-block h-16 -mt-2" />
-        <div
+        <button
           className="md:hidden mt-4 ml-4 bg-white w-[3.25rem] p-4 rounded-[200px] cursor-pointer"
-          onClick={extend}
+          onClick={(e) => {
+            e.stopPropagation();
+            extend();
+          }}
         >
           {navExtend ? (
             <FaXmark className="text-xl color-enacblk" />
           ) : (
             <FaAlignJustify className="text-xl color-enacblk" />
           )}
-        </div>
-        <div className={(navExtend ? "block" : "hidden") + " inner md:block font-moderniz"}>
+        </button>
+
+        <div className={(navExtend ? "block" : "hidden") + " inner md:block"}>
           <Button
             state={active[0]}
             value="Home"
@@ -142,6 +146,6 @@ export default function Navbar({ path }) {
           />
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
