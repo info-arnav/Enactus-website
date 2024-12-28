@@ -58,7 +58,7 @@ export default function Navbar({ path }) {
     setActive(activeList);
   };
   return (
-    <nav className={`fixed top-0 w-full z-50 md:relative ${navExtend ? "h-full" : "h-auto"}`}>
+    <nav className={`fixed top-0 w-full font-moderniz z-50 md:relative ${navExtend ? "h-full" : "h-auto"}`}>
       {navExtend && (
         <div
           className="fixed inset-0 bg-[rgba(0,0,0,0.8)] z-40"
