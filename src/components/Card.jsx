@@ -6,15 +6,15 @@ function Card({member , index}) {
     return (
         <div
           key={index}
-          className="h-auto w-full max-w-[90vw] sm:max-w-[45vw] lg:max-w-[30vw] relative flex justify-center flex-col text-left bg-red-700 rounded-2xl overflow-hidden transform transition hover:shadow-lg mx-auto"
+          className="h-auto w-full max-w-[90vw] sm:max-w-[45vw] lg:max-w-[30vw] relative flex justify-center flex-col text-left bg-red-700 rounded-2xl overflow-hidden transform transition hover:shadow-lg shadow-lg mx-auto"
         >
           <img
             src={member.image}
             alt={member.name}
             className="w-full h-[60vh] lg:h-[56vh] object-cover object-center"
           />
-          <div className="absolute inset-0 p-4 text-left font-moderniz flex flex-col justify-end items-start bg-opacity-50 text-white">
-            <div className="bg-white p-3 rounded-md bg-opacity-75 transition hover:bg-opacity-100">
+          <div className="absolute inset-0 p-4 text-left font-moderniz flex flex-col justify-end items-start bg-opacity-50 text-white h-auto">
+            <div className="bg-white p-3 h-auto rounded-md bg-opacity-75 transition hover:bg-opacity-100">
               <h3 className="text-lg font-semibold text-enacblk">{member.name}</h3>
               <p className="text-yellow-500 text-sm mb-2">{member.role}</p>
               <p className="text-xs text-zinc-700">{member.description}</p>

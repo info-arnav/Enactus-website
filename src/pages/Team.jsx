@@ -11,126 +11,9 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 // });
 
 const Team = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    const handleResize = () => {
-      const newWidth = window.innerWidth;
 
-      // Check if the width has changed and reload the page
-      if (newWidth !== windowWidth) {
-        setWindowWidth(newWidth);
-        window.location.reload(); // Reload the page
-      }
-    };
 
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup event listener on unmount
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  // for large screen size
-  if (windowWidth > 768) {
-    useGSAP(() => {
-      const tl = gsap.timeline();
-
-      // Define common scrollTrigger settings
-      const scrollTriggerConfig = {
-        scrub: 1,
-      };
-      // Reset initial states
-      tl.set("#presHeading", { scale: 1 });
-      tl.set("#pres", { opacity: 0 });
-      tl.set("#vpresHeading", { scale: 1 });
-      tl.set("#vpres", { opacity: 0 });
-      // pres heading
-      tl.to("#presHeading", {
-        scrollTrigger: {
-          ...scrollTriggerConfig,
-          trigger: "#presHeading",
-          start: "top top",
-          end: "10% top",
-        },
-        scale: 4,
-        duration: 2,
-      });
-
-      // presidents
-      tl.fromTo(
-        "#pres",
-        { opacity: 0 },
-        {
-          opacity: 1,
-          scrollTrigger: {
-            ...scrollTriggerConfig,
-            trigger: "#presHeading",
-            start: "7% top", // Starts when the `presHeading` animation ends
-            end: "50% center",
-          },
-        },
-      );
-
-      // Fade out presidents
-      tl.fromTo(
-        "#pres",
-        { opacity: 1 },
-        {
-          opacity: 0,
-          scrollTrigger: {
-            ...scrollTriggerConfig,
-            trigger: "#vpresHeading",
-            start: "20% center",
-            end: "30% center",
-          },
-        },
-      );
-
-      // vice-presi heading
-      tl.to("#vpresHeading", {
-        scrollTrigger: {
-          ...scrollTriggerConfig,
-          trigger: "#vpresHeading",
-          start: "-10% center",
-          end: "10% top",
-        },
-        scale: 2,
-        duration: 2,
-      });
-
-      // vice presidents
-      tl.fromTo(
-        "#vpres",
-        { opacity: 0 },
-        {
-          opacity: 1,
-          scrollTrigger: {
-            ...scrollTriggerConfig,
-            trigger: "#vpresHeading",
-            start: "-8% top", // Starts when the `presHeading` animation ends
-            end: "50% center",
-          },
-        },
-      );
-
-      // Fade out vice-presidents
-      tl.fromTo(
-        "#vpres",
-        { opacity: 1 },
-        {
-          opacity: 0,
-          scrollTrigger: {
-            ...scrollTriggerConfig,
-            trigger: "#vpres",
-            start: "40% center",
-            end: "70% center",
-          },
-        },
-      );
-    });
-  }
 
   return (
     <div className="team-section text-gray-800 h-auto ">
@@ -139,7 +22,7 @@ const Team = () => {
       </div>
       <div
         id="presHeading"
-        className="-mt-56 text-center font-moderniz h-[100vh] flex flex-col justify-center items-center text-3xl "
+        className="-mt-56 text-center font-moderniz h-[100vh] flex flex-col justify-center items-center text-4xl md:text-5xl lg:text-8xl"
       >
         PRESIDENTS
       </div>
@@ -155,7 +38,7 @@ const Team = () => {
       </div>
       <div
         id="vpresHeading"
-        className=" -mt-52 text-center font-moderniz h-[100vh] flex flex-col justify-center items-center text-3xl "
+        className=" -mt-52 text-center font-moderniz h-[100vh] flex flex-col justify-center items-center text-4xl md:text-5xl lg:text-8xl "
       >
         VICE PRESIDENT
       </div>
