@@ -6,7 +6,7 @@ function Card({member , index}) {
     return (
         <div
           key={index}
-          className="h-auto w-full max-w-[90vw] sm:max-w-[45vw] lg:max-w-[30vw] relative flex justify-center flex-col text-left bg-red-700 rounded-2xl overflow-hidden transform transition hover:shadow-lg shadow-lg mx-auto"
+          className="h-auto w-full max-w-[90vw] sm:max-w-[45vw] lg:max-w-[30vw] relative flex justify-center flex-col text-left bg-red-700 rounded-2xl overflow-hidden transform transition hover:shadow-[0px_8px_16px_rgba(0,0,0,0.3)] shadow-lg mx-auto"
         >
           <img
             src={member.image}
