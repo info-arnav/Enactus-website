@@ -12,6 +12,19 @@ export default {
       montserrat: ["Montserrat"],
       lemon: ["Lemon/Milk"],
     },
+    keyframes: {
+      ticker: {
+        from: {
+          left: "translateX(0%)",
+        },
+        to: {
+          transform: "translateX(-100%)",
+        },
+      },
+    },
+    animation: {
+      tickerSlide: "ticker 30s linear infinite",
+    },
   },
   plugins: [],
 };

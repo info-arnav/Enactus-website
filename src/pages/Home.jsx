@@ -1,9 +1,13 @@
 import partner_1 from "/images/partners/partner-1.jpeg";
 import partner_2 from "/images/partners/partner-2.png";
-import partner_3 from "/images/partners/partner-3.jpeg";
+import partner_3 from "/images/partners/partner-3.png";
+import partner_4 from "/images/partners/partner-4.jpg";
+import partner_5 from "/images/partners/partner-5.png";
+import partner_6 from "/images/partners/partner-6.svg";
 
 import team_home from "/images/hero-bg.jpeg";
 import enactus_about from "/images/Enactus_about.jpg";
+import "./Home.css";
 
 export default function Home() {
   return (
@@ -103,13 +107,53 @@ export default function Home() {
           />
         </div>
       </div>
-
-      <div className="w-full flex flex-col items-center justify-center gap-4 py-8">
-        <h1 className="font-moderniz text-2xl md:text-3xl">OUR PARTNERS</h1>
-        <div className="w-full flex flex-wrap justify-center items-center gap-4">
-          <img src={partner_1} alt="Partner 1" className="w-1/4 h-auto " />
-          <img src={partner_2} alt="Partner 2" className="w-1/4 h-auto " />
-          <img src={partner_3} alt="Partner 3" className="w-1/4 h-auto" />
+      <h1 className="font-moderniz text-2xl md:text-4xl w-full text-center">
+        PARTNERS
+      </h1>
+      <div className="flex mx-auto w-[90%] md:w-[90%] overflow-hidden select-none">
+        <div className="flex items-center justify-around whitespace-nowrap w-full animate-tickerSlide">
+          {[
+            partner_1,
+            partner_2,
+            partner_3,
+            partner_4,
+            partner_5,
+            partner_6,
+          ].map((item, key) => {
+            return (
+              <div
+                key={key}
+                className="grid place-items-center w-[clamp(20rem,1rem+40vmin,40rem)] p-[calc(clamp(10rem,1rem+20vmin,20rem)/40)]"
+              >
+                <img
+                  src={item}
+                  className="object-contain w-full h-full rounded-xs aspect-video"
+                />
+              </div>
+            );
+          })}
+        </div>
+        <div className="flex items-center justify-around whitespace-nowrap w-full animate-tickerSlide">
+          {[
+            partner_1,
+            partner_2,
+            partner_3,
+            partner_4,
+            partner_5,
+            partner_6,
+          ].map((item, key) => {
+            return (
+              <div
+                key={key}
+                className="grid place-items-center w-[clamp(20rem,1rem+40vmin,40rem)] p-[calc(clamp(10rem,1rem+20vmin,20rem)/40)]"
+              >
+                <img
+                  src={item}
+                  className="object-contain w-full h-full rounded-xs aspect-video"
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
     </>
