@@ -13,7 +13,7 @@ function Button({ state, value, handleClick }) {
       <Link
         to={"/" + (value == "Home" ? "" : value)}
         className={
-          "flex flex-col md:inline-block font-lemonmilk text-[10px] md:text-[sm] p-4 " +
+          "flex flex-col md:inline-block font-lemonmilk text-[10px] md:text-[sm] p-4 md:p-8 h-full " +
           (state == "true"
             ? "bg-enacblk text-white"
             : "bg-transparent text-enacblk hover:bg-enacblk hover:text-white transition ease-in")
@@ -87,10 +87,10 @@ export default function Navbar({ path }) {
 
       <div
         className={
-          "fixed z-50 md:relative md:flex md:flex-row justify-between md:h-12"
+          "fixed z-50 md:relative md:flex md:flex-row justify-between md:h-[80px]"
         }
       >
-        <img src={enac_logo} className="hidden md:inline-block h-16 -mt-2" />
+        <img src={enac_logo} className="hidden md:inline-block h-auto -mt-2" />
 
         <button
           className="md:hidden mt-4 ml-4 bg-white w-[3.25rem] p-4 rounded-[200px] cursor-pointer absolute z-10"

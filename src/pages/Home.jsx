@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-auto md:h-[30vh] lg:h-[38vh] w-full flex flex-col items-center justify-center px-4 md:px-8 py-8 gap-4 text-center">
+      <div className="h-auto md:h-[44vh] lg:h-[38vh] w-full flex flex-col items-center justify-center px-4 md:px-8 py-8 gap-4 text-center">
         <h1 className="font-moderniz text-2xl md:text-4xl">WHAT IS ENACTUS</h1>
         <p className="text-sm md:text-lg text-[#1F1F1F] font-montserrat">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
@@ -39,15 +39,39 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="w-full flex flex-col md:flex-row h-[28vh] md:h-[34vh] lg:h-[38vh] font-moderniz">
-        <div className="flex-1 bg-[#FFC000] text-enacblk flex justify-center items-center text-center py-4 md:py-0">
-          UPLIFT
+      <div className="w-full flex flex-col md:flex-row h-[28vh] md:h-[34vh] lg:h-[38vh] relative">
+        <div className="ease-in-out duration-300 transition-all hover:shadow-[inset_0_0_30px_rgba(0,0,0,1)] group flex-1 bg-[#FFCC00] md:py-0 relative overflow-hidden">
+          <p className="ease-in-out duration-300 transition group-hover:opacity-0 opacity-1 font-moderniz text-enacblk absolute flex justify-center items-center text-center h-[100%] w-[100%]">
+            UPLIFT
+          </p>
+          <p className="text-xs ease-in-out duration-300 transition opacity-0 group-hover:opacity-100 font-montserrat flex absolute text-enacblk justify-center items-center text-center h-[100%] w-[100%] px-4 bg-cover">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum,
+            excepturi officiis? Minus sequi dolor doloribus quis cupiditate
+            dolorem nisi veniam culpa iste, aspernatur, vero reprehenderit! Quam
+            doloribus facere amet mollitia.
+          </p>
         </div>
-        <div className="flex-1 bg-enacblk text-[#FFC000] flex justify-center items-center text-center py-4 md:py-0">
-          ENACT
+        <div className="ease-in-out duration-300 transition hover:shadow-[inset_0_0_40px_rgba(0,0,0,1)] group flex-1 bg-[#484848] md:py-0 relative overflow-hidden">
+          <p className="ease-in-out duration-300 transition group-hover:opacity-0 opacity-1 font-moderniz text-[#FFC000] absolute flex justify-center items-center text-center h-[100%] w-[100%]">
+            ENACT
+          </p>
+          <p className="text-xs ease-in-out duration-300 transition opacity-0 group-hover:opacity-100 font-montserrat flex absolute text-white justify-center items-center text-center h-[100%] w-[100%] px-4 bg-cover">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum,
+            excepturi officiis? Minus sequi dolor doloribus quis cupiditate
+            dolorem nisi veniam culpa iste, aspernatur, vero reprehenderit! Quam
+            doloribus facere amet mollitia.
+          </p>
         </div>
-        <div className="flex-1 bg-[#FFC000] text-black flex justify-center items-center text-center py-4 md:py-0">
-          ADVANCE
+        <div className="ease-in-out duration-300 transition hover:shadow-[inset_0_0_30px_rgba(0,0,0,1)] group flex-1 bg-[#FFCC00] md:py-0 relative overflow-hidden">
+          <p className="ease-in-out duration-300 transition group-hover:opacity-0 opacity-1 font-moderniz text-enacblk absolute flex justify-center items-center text-center h-[100%] w-[100%]">
+            ADVANCE
+          </p>
+          <p className="text-xs ease-in-out duration-300 transition opacity-0 group-hover:opacity-100 font-montserrat flex absolute text-enacblk justify-center items-center text-center h-[100%] w-[100%] px-4 bg-cover">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum,
+            excepturi officiis? Minus sequi dolor doloribus quis cupiditate
+            dolorem nisi veniam culpa iste, aspernatur, vero reprehenderit! Quam
+            doloribus facere amet mollitia.
+          </p>
         </div>
       </div>
 
