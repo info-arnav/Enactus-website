@@ -86,16 +86,14 @@ export default function Navbar({ path }) {
       )}
 
       <div
-        className={`fixed z-50 md:relative md:flex md:flex-row justify-between md:h-12 ${
-          navExtend
-            ? "bg-white min-h-[100vh] w-[150px]"
-            : "bg-transparent w-auto"
-        }`}
+        className={
+          "fixed z-50 md:relative md:flex md:flex-row justify-between md:h-12"
+        }
       >
         <img src={enac_logo} className="hidden md:inline-block h-16 -mt-2" />
 
         <button
-          className="md:hidden mt-4 ml-4 bg-white w-[3.25rem] p-4 rounded-[200px] cursor-pointer"
+          className="md:hidden mt-4 ml-4 bg-white w-[3.25rem] p-4 rounded-[200px] cursor-pointer absolute z-10"
           onClick={(e) => {
             e.stopPropagation();
             extend();
@@ -111,10 +109,10 @@ export default function Navbar({ path }) {
           <AnimatePresence initial={false}>
             {navExtend ? (
               <motion.div
-                className="inner navbar"
+                className="inner navbar bg-white min-h-[100%] fixed pt-[70px]"
                 initial={{ x: "-100%" }}
-                animate={{ x: "0%" }}
-                exit={{ x: "-100%" }}
+                animate={{ transform: "translateX(0%)" }}
+                exit={{ transform: "translateX(-100%)" }}
                 transition={{ ease: "easeOut", duration: 0.2 }}
               >
                 <Button
