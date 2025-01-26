@@ -1,7 +1,13 @@
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  color: black;
+.slick-prev:before,
+.slick-next:before {
+  content: "" !important;
 }
-.swiper-pagination-bullet-active {
-  color: black !important;
+.slick-slider {
+  padding: 0px 10px;
+}
+.slick-dots {
+  padding-right: 20px;
+}
+.slick-next {
+  margin-right: 40px;
 }

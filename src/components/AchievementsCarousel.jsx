@@ -2,6 +2,8 @@
 import { slides } from "../Database/achievements.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./AchievementsCarousel.css";
 import "/node_modules/swiper/swiper-bundle.min.css";
 export default function CarouselComplete({ screenWidth }) {

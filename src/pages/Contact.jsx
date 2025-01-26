@@ -7,7 +7,7 @@ export default function Contact() {
         </div>
         <section className="w-full flex flex-col space-y-4 max-w-4xl mx-auto justify-center">
           <p className="text-center px-8">
-            We&apos;d love to hear from you! <br />
+            We'd love to hear from you! <br />
             Whether you have a question, want to collaborate, or simply wish to
             learn more about the work we do at Enactus NSUT, feel free to reach
             out by filling this form or e-mailing us at{" "}
