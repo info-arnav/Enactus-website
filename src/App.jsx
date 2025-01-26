@@ -13,8 +13,8 @@ function App() {
   return (
     <>
     {/* background-image  */}
-      <div className="bg-[url(/images/Background.png)]">
-
+      {/* <div className="bg-[url(/images/Background.png)]"> */}
+      <div>
       {/* background-colour */}
       {/* <div className="bg-white"> */}
         <Navbar path={pathname} />
