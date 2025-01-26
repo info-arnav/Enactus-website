@@ -1,13 +1,18 @@
 import partner_1 from "/images/partners/partner-1.jpeg";
 import partner_2 from "/images/partners/partner-2.png";
 import partner_3 from "/images/partners/partner-3.png";
-import partner_4 from "/images/partners/partner-4.jpg";
+import partner_4 from "/images/partners/partner-4.png";
 import partner_5 from "/images/partners/partner-5.png";
 import partner_6 from "/images/partners/partner-6.svg";
+import partner_7 from "/images/partners/partner-7.png";
+import partner_8 from "/images/partners/partner-8.png";
+import partner_9 from "/images/partners/partner-9.png";
+import partner_10 from "/images/partners/partner-10.png";
 
 import team_home from "/images/hero-bg.jpeg";
 import enactus_about from "/images/Enactus_about.jpg";
 import "./Home.css";
+import Marquee from "react-marquee-slider";
 
 export default function Home() {
   return (
@@ -51,10 +56,9 @@ export default function Home() {
             UPLIFT
           </p>
           <p className="text-xs ease-in-out duration-300 transition opacity-0 group-hover:opacity-100 font-montserrat flex absolute text-enacblk justify-center items-center text-center h-[100%] w-[100%] px-4 bg-cover">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum,
-            excepturi officiis? Minus sequi dolor doloribus quis cupiditate
-            dolorem nisi veniam culpa iste, aspernatur, vero reprehenderit! Quam
-            doloribus facere amet mollitia.
+            Elevating lives and fostering hope—at Enactus, we empower
+            communities to overcome challenges through innovative, sustainable
+            solutions, paving the way for shared progress and brighter futures.
           </p>
         </div>
         <div className="ease-in-out duration-300 transition hover:shadow-[inset_0_0_40px_rgba(0,0,0,1)] group flex-1 bg-[#484848] md:py-0 relative overflow-hidden">
@@ -62,10 +66,9 @@ export default function Home() {
             ENACT
           </p>
           <p className="text-xs ease-in-out duration-300 transition opacity-0 group-hover:opacity-100 font-montserrat flex absolute text-white justify-center items-center text-center h-[100%] w-[100%] px-4 bg-cover">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum,
-            excepturi officiis? Minus sequi dolor doloribus quis cupiditate
-            dolorem nisi veniam culpa iste, aspernatur, vero reprehenderit! Quam
-            doloribus facere amet mollitia.
+            Turning ideas into impact—Enactus transforms challenges into
+            opportunities with purpose-driven actions, blending entrepreneurship
+            and social commitment to drive meaningful change.
           </p>
         </div>
         <div className="ease-in-out duration-300 transition hover:shadow-[inset_0_0_30px_rgba(0,0,0,1)] group flex-1 bg-[#FFCC00] md:py-0 relative overflow-hidden">
@@ -73,10 +76,9 @@ export default function Home() {
             ADVANCE
           </p>
           <p className="text-xs ease-in-out duration-300 transition opacity-0 group-hover:opacity-100 font-montserrat flex absolute text-enacblk justify-center items-center text-center h-[100%] w-[100%] px-4 bg-cover">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum,
-            excepturi officiis? Minus sequi dolor doloribus quis cupiditate
-            dolorem nisi veniam culpa iste, aspernatur, vero reprehenderit! Quam
-            doloribus facere amet mollitia.
+            Building tomorrow today—Enactus advances communities through
+            innovation, mentorship, and leadership, equipping changemakers to
+            shape a resilient, sustainable future.
           </p>
         </div>
       </div>
@@ -110,52 +112,68 @@ export default function Home() {
       <h1 className="font-moderniz text-2xl md:text-4xl w-full text-center">
         PARTNERS
       </h1>
-      <div className="flex mx-auto w-[90%] md:w-[90%] overflow-hidden select-none">
-        <div className="flex items-center justify-around whitespace-nowrap w-full animate-tickerSlide">
-          {[
-            partner_1,
-            partner_2,
-            partner_3,
-            partner_4,
-            partner_5,
-            partner_6,
-          ].map((item, key) => {
-            return (
-              <div
-                key={key}
-                className="grid place-items-center w-[clamp(20rem,1rem+40vmin,40rem)] p-[calc(clamp(10rem,1rem+20vmin,20rem)/40)]"
-              >
-                <img
-                  src={item}
-                  className="object-contain w-full h-full rounded-xs aspect-video"
-                />
-              </div>
-            );
-          })}
+      <Marquee velocity={25}>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_1}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
         </div>
-        <div className="flex items-center justify-around whitespace-nowrap w-full animate-tickerSlide">
-          {[
-            partner_1,
-            partner_2,
-            partner_3,
-            partner_4,
-            partner_5,
-            partner_6,
-          ].map((item, key) => {
-            return (
-              <div
-                key={key}
-                className="grid place-items-center w-[clamp(20rem,1rem+40vmin,40rem)] p-[calc(clamp(10rem,1rem+20vmin,20rem)/40)]"
-              >
-                <img
-                  src={item}
-                  className="object-contain w-full h-full rounded-xs aspect-video"
-                />
-              </div>
-            );
-          })}
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_2}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
         </div>
-      </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_8}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_4}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_5}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_6}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_7}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_3}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_9}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_10}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+      </Marquee>
     </>
   );
 }
