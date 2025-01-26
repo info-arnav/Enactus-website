@@ -42,8 +42,8 @@ const Team = () => {
       <PostCard title="Vice Presidents" data={VicePresidents}/>
       <PostCard title="Executive Directors" data={ExecutiveDirectors}/>
       <PostCard title="Directors" data={Directors}/>
-      <PostCard title="Technical" data={Technical}/>
-      <PostCard title="Design" data={Design}/>
+      <PostCard title="Technical Directors" data={Technical}/>
+      <PostCard title="Design Directors" data={Design}/>
       <PostCard title="General Secretary" data={GeneralSecretary}/>
       <PostCard title="Secretary" data={Secretary}/>
 
