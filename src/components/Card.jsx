@@ -1,43 +1,18 @@
 import React from "react";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import XIcon from "@mui/icons-material/X";
 function Card({member , index}) {
     return (
         <div
           key={index}
-          className="h-auto w-full max-w-[90vw] sm:max-w-[45vw] lg:max-w-[30vw] relative flex justify-center flex-col text-left bg-red-700 rounded-2xl overflow-hidden transform transition hover:shadow-[0px_8px_16px_rgba(0,0,0,0.3)] shadow-lg mx-auto"
+          className="h-auto w-auto sm:min-w-[40vw] lg:min-w-[23vw] max-w-[90vw] sm:max-w-[45vw] lg:max-w-[30vw] relative flex justify-center flex-col text-left rounded-2xl overflow-hidden transform transition  mx-auto  hover:shadow-[0px_8px_16px_rgba(189,183,107)]"
         >
           <img
             src={member.image}
             alt={member.name}
-            className="w-full h-[60vh] lg:h-[56vh] object-cover object-center"
+            className={`w-full h-[60vh] lg:h-[56vh] object-cover object-${member.position} hover:shadow-[0px_8px_16px_rgba(0,0,0,0.3)] shadow-lg rounded-md`}
           />
-          <div className="absolute inset-0 p-4 text-left font-moderniz flex flex-col justify-end items-start bg-opacity-50 text-white h-auto">
-            <div className="bg-white p-3 h-auto rounded-md bg-opacity-75 transition hover:bg-opacity-100">
+          <div className="absolute inset-0 py-6 text-left font-moderniz flex flex-col justify-end items-start bg-opacity-50 text-white h-auto">
+            <div className=" bg-white border rounded-r-lg p-3 h-auto bg-opacity-75 transition hover:bg-opacity-100">
               <h3 className="text-lg font-semibold text-enacblk">{member.name}</h3>
-              <p className="text-yellow-500 text-sm mb-2">{member.role}</p>
-              <p className="text-xs text-zinc-700">{member.description}</p>
-              <div className="flex justify-start items-center space-x-5 text-gray-200 mt-3 w-full h-auto">
-                <FacebookIcon
-                  className="text-blue-600 scale-125"
-                  onClick={() => {
-                    window.open(member.facebook);
-                  }}
-                />
-                <InstagramIcon
-                  className="text-pink-500 scale-110"
-                  onClick={() => {
-                    window.open(member.instagram);
-                  }}
-                />
-                <XIcon
-                  className="text-black"
-                  onClick={() => {
-                    window.open(member.twitter);
-                  }}
-                />
-              </div>
             </div>
           </div>
         </div>
