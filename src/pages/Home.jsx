@@ -17,6 +17,7 @@ export default function Home() {
   return (
     <>
       <div className="relative w-full h-[40vh] md:h-[48vh] lg:h-[55vh] flex items-center">
+      <div className="relative w-full h-[40vh] md:h-[48vh] lg:h-[55vh] flex items-center">
         <img
           src={team_home}
           alt="cover"
@@ -38,8 +39,13 @@ export default function Home() {
       </div>
 
       <div className="h-auto md:h-[30vh] lg:h-[38vh] w-full flex flex-col items-center justify-center px-4 md:px-8 py-8 gap-4 text-center">
+      <div className="h-auto md:h-[30vh] lg:h-[38vh] w-full flex flex-col items-center justify-center px-4 md:px-8 py-8 gap-4 text-center">
         <h1 className="font-moderniz text-2xl md:text-4xl">WHAT IS ENACTUS</h1>
         <p className="text-sm md:text-lg text-[#1F1F1F] font-montserrat">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          distinctio explicabo sint facere similique cupiditate nisi laudantium
+          expedita praesentium natus, earum repudiandae repellat. Assumenda
+          vero, iste obcaecati ipsa eligendi sit?
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
           distinctio explicabo sint facere similique cupiditate nisi laudantium
           expedita praesentium natus, earum repudiandae repellat. Assumenda
