@@ -26,9 +26,9 @@ export default function Navbar({ path }) {
   const indexPath = new Map([
     ["/", 0],
     ["/Projects", 1],
-    ["/Contact", 2],
-    ["/Achievements", 3],
-    ["/Team", 4],
+    ["/Achievements", 2],
+    ["/Team", 3],
+    ["/Contact", 4],
   ]);
   const width = window.innerWidth;
   var innerClicked = false;
@@ -116,7 +116,7 @@ export default function Navbar({ path }) {
           />
           <Button
             state={active[2]}
-            value="Contact"
+            value="Achievements"
             handleClick={() => {
               handler(2);
               if (width <= 640) {
@@ -126,7 +126,7 @@ export default function Navbar({ path }) {
           />
           <Button
             state={active[3]}
-            value="Achievements"
+            value="Team"
             handleClick={() => {
               handler(3);
               if (width <= 640) {
@@ -136,7 +136,7 @@ export default function Navbar({ path }) {
           />
           <Button
             state={active[4]}
-            value="Team"
+            value="Contact"
             handleClick={() => {
               handler(4);
               if (width <= 640) {
