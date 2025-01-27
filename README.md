@@ -1,9 +1,9 @@
- # <img src="./images/favicon.ico" alt="Enactus logo" width="60" height="60">Enactus NSUT website
+# <img src="public\images\favicon.ico" alt="Enactus logo" width="60" height="60"/>Enactus NSUT website
 
 Note: 
 - **Collaborators are invite only.**
 - Don't push into the `main` branch of the original repo
-- Pull updated code from original repo's `main` to forked repo's `main`.
+- Pull updated code from original repo's `dev`.
 
 To add contributions/code
 
