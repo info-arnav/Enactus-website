@@ -34,8 +34,8 @@ export const Presidents = [
       position:"center"
     },{
       name: "Agastya",
-      image:
-        "https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image:"/Heads/Agastya.png",
+      position:"top"
     },
     {
       name: "Arsh Poddar",

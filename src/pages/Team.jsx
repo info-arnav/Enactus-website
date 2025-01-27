@@ -34,8 +34,8 @@ const Team = () => {
 
 
   return (
-    <div className="team-section text-gray-800 h-auto bg-gradient-to-t from-white to-[#FDC025]">
-      <div className=" my-2 md:block text-center font-moderniz border-t-[10px] md:border-t-[25px] border-b-[10px] md:border-b-[25px] py-[6%] border-enacblk text-xl md:text-5xl font-bold bg-[url('/images/YellowBG.png')]">
+    <div className="team-section text-gray-800 h-auto">
+      <div className=" mb-2 md:block text-center font-moderniz border-t-[10px] md:border-t-[25px] border-b-[10px] md:border-b-[25px] py-[6%] border-enacblk text-xl md:text-5xl font-bold bg-[url('/images/YellowBG.png')]">
         OUR TEAM
       </div>
       <PostCard title="Presidents" data={Presidents}/>

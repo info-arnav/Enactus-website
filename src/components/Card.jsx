@@ -3,7 +3,7 @@ function Card({member , index}) {
     return (
         <div
           key={index}
-          className="h-auto w-auto sm:min-w-[40vw] lg:min-w-[23vw] max-w-[90vw] sm:max-w-[45vw] lg:max-w-[30vw] relative flex justify-center flex-col text-left rounded-2xl overflow-hidden transform transition  mx-auto  hover:shadow-[0px_8px_16px_rgba(189,183,107)] hover:scale-105"
+          className=" h-auto w-2/3 md:w-2/5 lg:w-1/4 relative flex justify-center flex-col text-left rounded-2xl hover:shadow-[0px_24px_48px_rgba(0,0,0,0.3)] overflow-hidden transform transition  mx-auto   hover:scale-105"
         >
           <img
             src={member.image}
