@@ -18,7 +18,7 @@ export const Presidents = [
     },
     {
       name: "Siddharth Bhatia",
-      image:"/Heads/Siddharth_Bhatia.jpg",
+      image:"/Heads/Siddhart.png",
       position:"top"
     }
   ];
