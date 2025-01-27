@@ -13,11 +13,13 @@ export default function Achievements() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   const [showcase, setShowcase] = useState([]);
+  const [slidesCount, setSlidesCount] = useState(3);
   useEffect(() => {
+    setShowcase(slides);
     if (screenWidth < 768) {
-      setShowcase(slides.slice(0, 1));
+      setSlidesCount(1);
     } else {
-      setShowcase(slides.slice(0, 4));
+      setSlidesCount(3);
     }
   }, [screenWidth]);
   return (
@@ -26,7 +28,9 @@ export default function Achievements() {
         OUR ACHIEVEMENTS
       </div>
       <>
-        <div className="w-[300px] md:w-[700px] mx-auto mt-[20px]">
+        <div
+          className="w-[300px] md:w-[700px] mx-auto mt-[20px]"
+        >
           <Swiper
             style={{
               "--swiper-theme-color": "black",
@@ -34,13 +38,8 @@ export default function Achievements() {
             spaceBetween={20}
             slidesPerView={1}
             loop={true}
-            onSwiper={(swiper) => console.log(swiper)}
             cssMode={true}
             navigation={screenWidth > 768 ? true : false}
-            autoplay={{
-              delay: 6000,
-              disableOnInteraction: true,
-            }}
             pagination={{
               clickable: true,
             }}
@@ -68,10 +67,40 @@ export default function Achievements() {
           </Swiper>
         </div>
       </>
-      <div className="flex gap-8 w-[90%] mx-auto mt-[40px] md:mt-[80px] justify-center">
-        {showcase.map((item, idx) => {
-          return <InstagramEmbed url={item.link} captioned key={idx} />;
-        })}
+      <div className=" w-[90%]  pb-10 mx-auto mt-[40px] md:mt-[80px] justify-center">
+        <Swiper
+          style={{
+            "--swiper-theme-color": "black",
+          }}
+          spaceBetween={20}
+          slidesPerView={slidesCount}
+          loop={true}
+          cssMode={true}
+          navigation={screenWidth > 768 ? true : false}
+          autoplay={{
+            delay: 8000,
+            disableOnInteraction: true,
+          }}
+          pagination={{
+            dynamicBullets: true,
+          }}
+          modules={[Navigation, Autoplay, Pagination]}
+        >
+          {showcase.map((item, idx) => {
+            return (
+              <>
+                <SwiperSlide key={idx}>
+                  <InstagramEmbed
+                    url={item.link}
+                    captioned
+                    key={idx}
+                    height={750}
+                  />
+                </SwiperSlide>
+              </>
+            );
+          })}
+        </Swiper>
       </div>
     </>
   );

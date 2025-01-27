@@ -1,24 +1,24 @@
 {
   "achievements": [
     {
-      "image": "/images/enacLogo.jpg",
-      "sub": "Sample1",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque minima autem aperiam deserunt doloremque, eligendi velit numquam cupiditate nulla, voluptas vel repellendus enim, architecto perspiciatis sed quas earum aspernatur."
+      "image": "/images/achievements/img1.jpg",
+      "sub": "Enactus Nationals 2023 Winners!",
+      "text": " Prominent success of Enactus NSUT in the early stage of the \"Enactus India National Exposition,\" held on the 8th and 9th of July at IIT Delhi, with participation from over 110 teams representing some of India’s most prestigious colleges.In this competition, where teams pitched their most innovative and impactful ideas before the judges, Enactus NSUT stood out with their project 'CLAIR.' The project aims to combat air pollution and make clean, fresh air accessible through an air purifier priced at ₹2900. The purifier operates on a two-stage filtration process combining HEPA and pre-filter technology. Additionally, the project focuses on empowering women by providing employment opportunities to unemployed women from the Bharat Vihar community of West Delhi."
     },
     {
-      "image": "/images/enacLogo.jpg",
-      "sub": "Sample2",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque minima autem aperiam deserunt doloremque, eligendi velit numquam cupiditate nulla, voluptas vel repellendus enim, architecto perspiciatis sed quas earum aspernatur."
+      "image": "/images/achievements/img2.jpeg",
+      "sub": "Enactus Nationals 2024 Finalists",
+      "text": "Enactus NSUT emerged as a finalist in the early-stage category at the Enactus India National Exposition, held on July 26, 2024, at Amity University, Noida. They showcased Project Annotsav, earning a spot in the top 4 among 100 colleges across India. Project Annotsav focuses on developing an automated irrigation system that regulates water flow based on soil moisture levels monitored through sensors. Additionally, Enactus NSUT was honored with the Legacy Award, celebrating 16 years of empowering communities and making a significant social impact. This recognition reflects their ongoing commitment to innovative solutions and sustainable development."
     },
     {
-      "image": "/images/YellowBG.png",
-      "sub": "Sample3",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque minima autem aperiam deserunt doloremque, eligendi velit numquam cupiditate nulla, voluptas vel repellendus enim, architecto perspiciatis sed quas earum aspernatur."
+      "image": "/images/achievements/img4.jpg",
+      "sub": "Winner of the \"Race for a Better India\" competition, organized by Enactus India.",
+      "text": "We extend our heartfelt congratulations to our team, Enactus NSUT, for their remarkable victory in the \"Race for a Better India\" competition, organized by Enactus India under the category of \"SDG 1: No Poverty.\" This achievement highlights the incredible talent, passion, and ingenuity within our team and showcases our unwavering dedication to creating a better India through Project Annotsav. Project Annotsav addresses critical issues faced by farmers in irrigation, crop yield optimization, and water management. It is designed to capitalize on the growing demand for smart farming solutions. Through this project, our team—comprising Krish Chawla, Yuvraj Singh Chowdhary, Raghav Saini, Naman Dureja, and Amitoj Singh—demonstrated the potential to eradicate poverty and uplift lives through innovative and sustainable solutions. As a testament to their efforts, they emerged victorious, securing a well-deserved prize pool of  \n\"INR 35,000.\""
     },
     {
-      "image": "/images/YellowBG.png",
-      "sub": "Sample4",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque minima autem aperiam deserunt doloremque, eligendi velit numquam cupiditate nulla, voluptas vel repellendus enim, architecto perspiciatis sed quas earum aspernatur."
+      "image": "/images/achievements/img3.jpg",
+      "sub": "Team Satva secured 3rd position",
+      "text": "We are thrilled to share that Team Satva from Enactus NSUT secured 3rd position and won a cash prize at GandhiPreneurs, organized by Our Mitti Foundation in collaboration with the Ministry of Culture on 12th January 2025 at Satyagrah Mandap, Rajghat, Delhi. \n\nThe competition encouraged participants to design projects or ventures promoting simplicity, nonviolence, and grassroots innovation, aligning with Gandhian philosophies. Representing Team Satva were Anmol Garg, Radhika Chopra, Vasu Goel, and Divasjot Singh, who captivated the audience and judges with their innovative ideas and impactful presentations. \n\nThe esteemed panel of judges included Gursaurabh Singh, founder of Dhruv Vidyut and featured in Shark Tank, Dr. Jwala Prasad, Director at GSDS under the Ministry of Culture, and Partha P Roy Chowdhury, Commercial Lead Japan at Lockheed Martin. \n\nCongratulations to Team Satva on their remarkable achievement, showcasing the power of innovation to drive positive change! Their success is a reminder that dedication and creativity can pave the way for impactful change."
     }
   ]
 }
