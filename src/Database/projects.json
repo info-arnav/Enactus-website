@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "color": "#3CB043",
+      "image": "/images/enacLogo.jpg",
+      "name": "Annotsav",
+      "text": "Annotsav is an innovative initiative by Enactus NSUT aimed at revolutionizing both agriculture and personal gardening practices. We address challenges like water scarcity and inefficient irrigation for farmers. We also offer customized table pots with select plants, designed to enhance study tables and creative workspaces. Additionally, we produce in-house fertilizer balls to support plant health. Our mission is to enhance agricultural productivity, promote environmental conservation, and improve the livelihoods of farming communities"
+    },
+    {
+      "color": "#6F4E37",
+      "image": "/images/enacLogo.jpg",
+      "name": "Satva",
+      "text": "Satva is a project by Enactus NSUT, born from a simple idea, to turn coffee waste into something beautiful and useful. In India we end up with millions of tonnes of waste every year. Satva takes this waste and turns it into stylish, everyday products like mugs, kulhads, and candles. By working with potters and artisans in Uttam Nagar and Kanpur, we are helping to create jobs and uplift local communities."
+    },
+    {
+      "color": "#ffb866",
+      "image": "/images/logos/Srijan.jpeg",
+      "name": "Srijan",
+      "text": "Project Srijan, an eco initiative by Enactus NSUT, transforms paper waste into innovative products thatappeal to businesses and eco-conscious customers. Our seed paper products are designed to bloom into plants when planted in the soil, turning waste into growth and leaving no environmental footprint behind. With a clear mission to minimize paper waste, we inspire positive, lasting environmental impact and create a future where sustainability thrives at every level."
+    },
+    {
+      "color": "#DE5D83",
+      "image": "/images/YellowBG.png",
+      "name": "Project",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque minima autem aperiam deserunt doloremque, eligendi velit numquam cupiditate nulla, voluptas vel repellendus enim, architecto perspiciatis sed quas earum aspernatur."
+    }
+  ]
+}

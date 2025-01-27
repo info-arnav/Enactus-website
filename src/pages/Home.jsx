@@ -1,9 +1,17 @@
 import partner_1 from "/images/partners/partner-1.jpeg";
 import partner_2 from "/images/partners/partner-2.png";
-import partner_3 from "/images/partners/partner-3.jpeg";
+import partner_3 from "/images/partners/partner-3.png";
+import partner_4 from "/images/partners/partner-4.png";
+import partner_5 from "/images/partners/partner-5.png";
+import partner_6 from "/images/partners/partner-6.svg";
+import partner_7 from "/images/partners/partner-7.png";
+import partner_8 from "/images/partners/partner-8.png";
+import partner_9 from "/images/partners/partner-9.png";
+import partner_10 from "/images/partners/partner-10.png";
 
-import team_home from "/images/team_home.png"
-import enactus_about from "/images/Enactus_about.jpg"
+import team_home from "/images/team_home.png";
+import enactus_about from "/images/Enactus_about.jpg";
+import Marquee from "react-marquee-slider";
 
 export default function Home() {
   return (
@@ -35,22 +43,46 @@ export default function Home() {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
           distinctio explicabo sint facere similique cupiditate nisi laudantium
           expedita praesentium natus, earum repudiandae repellat. Assumenda
-          vero, iste obcaecati ipsa eligendi sit?
+          vero, iste obcaecati ipsa eligendi sit? Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Perspiciatis distinctio explicabo sint
+          facere similique cupiditate nisi laudantium expedita praesentium
+          natus, earum repudiandae repellat. Assumenda vero, iste obcaecati ipsa
+          eligendi sit?
         </p>
       </div>
 
-      <div className="w-full flex flex-col md:flex-row h-[28vh] md:h-[34vh] lg:h-[38vh] font-moderniz">
-        <div className="flex-1 bg-[#FFC000] text-enacblk flex justify-center items-center text-center py-4 md:py-0">
-          UPLIFT
+      <div className="w-full flex flex-col md:flex-row h-[28vh] md:h-[34vh] lg:h-[38vh] relative">
+        <div className="ease-in-out duration-300 transition-all hover:shadow-[inset_0_0_30px_rgba(0,0,0,1)] group flex-1 bg-[#FFCC00] md:py-0 relative overflow-hidden">
+          <p className="ease-in-out duration-300 transition group-hover:opacity-0 opacity-1 font-moderniz text-enacblk absolute flex justify-center items-center text-center h-[100%] w-[100%]">
+            UPLIFT
+          </p>
+          <p className="text-xs ease-in-out duration-300 transition opacity-0 group-hover:opacity-100 font-montserrat flex absolute text-enacblk justify-center items-center text-center h-[100%] w-[100%] px-4 bg-cover">
+            Elevating lives and fostering hope—at Enactus, we empower
+            communities to overcome challenges through innovative, sustainable
+            solutions, paving the way for shared progress and brighter futures.
+          </p>
         </div>
-        <div className="flex-1 bg-enacblk text-[#FFC000] flex justify-center items-center text-center py-4 md:py-0">
-          ENACT
+        <div className="ease-in-out duration-300 transition hover:shadow-[inset_0_0_40px_rgba(0,0,0,1)] group flex-1 bg-[#484848] md:py-0 relative overflow-hidden">
+          <p className="ease-in-out duration-300 transition group-hover:opacity-0 opacity-1 font-moderniz text-[#FFC000] absolute flex justify-center items-center text-center h-[100%] w-[100%]">
+            ENACT
+          </p>
+          <p className="text-xs ease-in-out duration-300 transition opacity-0 group-hover:opacity-100 font-montserrat flex absolute text-white justify-center items-center text-center h-[100%] w-[100%] px-4 bg-cover">
+            Turning ideas into impact—Enactus transforms challenges into
+            opportunities with purpose-driven actions, blending entrepreneurship
+            and social commitment to drive meaningful change.
+          </p>
         </div>
-        <div className="flex-1 bg-[#FFC000] text-black flex justify-center items-center text-center py-4 md:py-0">
-          ADVANCE
+        <div className="ease-in-out duration-300 transition hover:shadow-[inset_0_0_30px_rgba(0,0,0,1)] group flex-1 bg-[#FFCC00] md:py-0 relative overflow-hidden">
+          <p className="ease-in-out duration-300 transition group-hover:opacity-0 opacity-1 font-moderniz text-enacblk absolute flex justify-center items-center text-center h-[100%] w-[100%]">
+            ADVANCE
+          </p>
+          <p className="text-xs ease-in-out duration-300 transition opacity-0 group-hover:opacity-100 font-montserrat flex absolute text-enacblk justify-center items-center text-center h-[100%] w-[100%] px-4 bg-cover">
+            Building tomorrow today—Enactus advances communities through
+            innovation, mentorship, and leadership, equipping changemakers to
+            shape a resilient, sustainable future.
+          </p>
         </div>
       </div>
-
       <div className="w-full flex flex-col md:flex-row items-center justify-center gap-6 p-6">
         <div className="w-full md:w-2/3 flex flex-col gap-6 text-center">
           <h1 className="font-moderniz text-2xl md:text-4xl w-full text-center">
@@ -71,15 +103,71 @@ export default function Home() {
           />
         </div>
       </div>
-
-      <div className="w-full flex flex-col items-center justify-center gap-4 py-8">
-        <h1 className="font-moderniz text-2xl md:text-3xl">OUR PARTNERS</h1>
-        <div className="w-full flex flex-wrap justify-center items-center gap-4">
-          <img src={partner_1} alt="Partner 1" className="w-1/4 h-auto " />
-          <img src={partner_2} alt="Partner 2" className="w-1/4 h-auto " />
-          <img src={partner_3} alt="Partner 3" className="w-1/4 h-auto" />
+      <h1 className="font-moderniz text-2xl md:text-4xl w-full text-center">
+        PARTNERS
+      </h1>
+      <Marquee velocity={25}>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_1}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
         </div>
-      </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_2}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_8}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_4}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_5}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_6}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_7}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_3}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_9}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+        <div className="grid-row place-items-center w-[clamp(10rem,1rem+20vmin,20rem)] p-[calc(clamp(5rem,1rem+20vmin,20rem)/10)]">
+          <img
+            src={partner_10}
+            className="object-contain w-full h-full rounded-xs aspect-video"
+          />
+        </div>
+      </Marquee>
     </>
   );
 }
