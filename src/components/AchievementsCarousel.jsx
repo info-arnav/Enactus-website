@@ -2,7 +2,7 @@
 import { slides } from "../Database/achievements.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
-import "/Users/jyotinthakur/Desktop/Enactus-website/node_modules/swiper/swiper-bundle.min.css";
+import "../../node_modules/swiper/swiper-bundle.min.css"
 export default function CarouselComplete({ screenWidth }) {
   let screenwidth = screenWidth;
   return (

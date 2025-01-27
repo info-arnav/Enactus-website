@@ -1,4 +1,4 @@
-import CarouselComplete from "../components/AchievementsCarousel";
+import CarouselComplete from "../components/AchievementsCarousel.jsx";
 import { slides } from "../Database/news.json";
 import { InstagramEmbed } from "react-social-media-embed";
 import { useState, useEffect } from "react";
