@@ -39,15 +39,11 @@ export default function Home() {
 
       <div className="h-auto md:h-[30vh] lg:h-[38vh] w-full flex flex-col items-center justify-center px-4 md:px-8 py-8 gap-4 text-center">
         <h1 className="font-moderniz text-2xl md:text-4xl">WHAT IS ENACTUS</h1>
-        <p className="text-sm md:text-lg text-[#1F1F1F] font-montserrat">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-          distinctio explicabo sint facere similique cupiditate nisi laudantium
-          expedita praesentium natus, earum repudiandae repellat. Assumenda
-          vero, iste obcaecati ipsa eligendi sit? Lorem, ipsum dolor sit amet
-          consectetur adipisicing elit. Perspiciatis distinctio explicabo sint
-          facere similique cupiditate nisi laudantium expedita praesentium
-          natus, earum repudiandae repellat. Assumenda vero, iste obcaecati ipsa
-          eligendi sit?
+        <p className="text-sm md:text-xl text-[#1F1F1F] font-montserrat text-pretty">
+          Enactus is a network of leaders committed to using business as a
+          catalyst for positive social and environmental impact. We educate,
+          inspire, and support young people to use innovation and
+          entrepreneurship to solve the world&apos;s biggest problems.
         </p>
       </div>
 
@@ -88,11 +84,17 @@ export default function Home() {
           <h1 className="font-moderniz text-2xl md:text-4xl w-full text-center">
             ABOUT US
           </h1>
-          <p className="font-montserrat text-sm md:text-lg text-enacblk">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum,
-            excepturi officiis? Minus sequi dolor doloribus quis cupiditate
-            dolorem nisi veniam culpa iste, aspernatur, vero reprehenderit! Quam
-            doloribus facere amet mollitia.
+          <p className="font-montserrat text-sm md:text-lg text-enacblk text-pretty">
+            Enactus NSUT is a student-led organization dedicated to using
+            entrepreneurial action and technology to uplift underserved
+            communities and drive sustainable development. We develop impactful
+            projects that tackle social challenges and create opportunities for
+            growth, empowering marginalized groups. Through innovative tech
+            solutions in education, healthcare, and financial inclusion, we aim
+            to foster meaningful change and build a more inclusive, resilient
+            society. Our initiatives improve lives and equip communities with
+            the skills and resources needed to thrive in a rapidly changing
+            world.
           </p>
         </div>
         <div className="w-full md:w-1/3 rounded-lg overflow-hidden">
