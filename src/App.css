@@ -38,5 +38,24 @@ html {
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .project-container {
+    @apply relative h-[420px] cursor-pointer;
+  }
+
+  .project-text {
+    @apply opacity-0 absolute top-10 z-30  text-3xl  w-full  px-20 font-lemon  
+    ;
+  }
+
+  .project-bg-img {
+    @apply h-full w-full object-cover;
+  }
+  .highlight1 {
+    @apply text-black text-4xl uppercase font-semibold;
+  }
+
 }

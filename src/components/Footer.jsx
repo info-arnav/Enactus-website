@@ -3,7 +3,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
 import { Link } from "react-router-dom";
 
-import enac_symbol from "/images/symbol_enactus.png";
 
 export default function Footer() {
   const date = new Date();

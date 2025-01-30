@@ -5,6 +5,13 @@ export default {
     extend: {
       colors: {
         enacblk: "#282828",
+        // annotsavGreen: "#3CB043",
+        annotsavGreen: "#1B4D3E",
+        // clairBlue: "#6CB4EE",
+        clairBlue: "#002D62",
+        // satvaBrown: "#6F4E37"
+        satvaBrown: "#673400",
+        enactusYellow: "#ffbf10"
       },
     },
     fontFamily: {
