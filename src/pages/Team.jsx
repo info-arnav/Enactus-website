@@ -17,7 +17,6 @@ const Imagecard=({props})=>{
           </div>);
 }
 const Titlename=({props})=>{
-  // console.log(props);
   return (<div
   className=" text-center font-moderniz h-auto flex justify-center items-center text-4xl md:text-5xl lg:text-8xl"
 >
@@ -43,7 +42,7 @@ const Team = () => {
       <PostCard title="Executive Directors" data={ExecutiveDirectors}/>
       <PostCard title="Directors" data={Directors}/>
       <PostCard title="Technical Directors" data={Technical}/>
-      <PostCard title="Design Director" data={Design}/>
+      <PostCard title={<span>Design <br /> Director</span>} data={Design}/>
       <PostCard title="General Secretary" data={GeneralSecretary}/>
       <PostCard title="Secretary" data={Secretary}/>
 

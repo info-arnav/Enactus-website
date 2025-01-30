@@ -48,16 +48,16 @@ export default function Achievements() {
             {achievements.map((item, idx) => {
               return (
                 <SwiperSlide key={idx}>
-                  <div className="mx-auto w-[80%] md:w-[70%] pb-[50px]">
+                  <div className="mx-auto w-full pb-[50px]">
                     <div className="shadow-lg">
                       <div className="justify-center flex">
-                        <img src={item.image} className="cover" />
+                        <img src={item.image} className="cover"  />
                       </div>
                       <div className="flex flex-col items-center bg-white p-4 md:p-10 ">
                         <h2 className="pb-4 md:pb-8 font-bold text-lg md:text-xl font-lemonmilk">
                           {item.sub}
                         </h2>
-                        <p className="text-xs font-montserrat">{item.text}</p>
+                        <p className="text-sm font-montserrat">{item.text}</p>
                       </div>
                     </div>
                   </div>
