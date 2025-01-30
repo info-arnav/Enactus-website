@@ -9,14 +9,14 @@ import partner_8 from "/images/partners/partner-8.png";
 import partner_9 from "/images/partners/partner-9.png";
 import partner_10 from "/images/partners/partner-10.png";
 
-import team_home from "/images/team_home.png";
+import team_home from "/images/team_home2.jpg";
 import enactus_about from "/images/Enactus_about.jpg";
 import Marquee from "react-marquee-slider";
 
 export default function Home() {
   return (
     <>
-      <div className="relative w-full h-[40vh] md:h-[48vh] lg:h-[55vh] flex items-center">
+      <div className="relative w-full h-[40vh] md:h-[48vh] lg:h-[95vh] flex items-center">
         <img
           src={team_home}
           alt="cover"
@@ -24,7 +24,7 @@ export default function Home() {
         />
         <div className="absolute top-0 w-full h-full bg-gradient-to-r from-black to-transparent"></div>
 
-        <div className="h-1/4 md:h-1/3 lg:h-1/2 w-full relative flex flex-col items-start justify-around text-white font-bold text-2xl md:text-4xl lg:text-6xl gap-2 px-2 font-moderniz">
+        <div className="h-1/4 md:h-1/3 lg:h-1/2 w-full relative flex flex-col items-start justify-around text-white font-bold text-2xl md:text-4xl lg:text-6xl gap-2 px-2 font-moderniz ">
           <div>
             <span className="text-yellow-500">En</span>trepreneurial
           </div>
@@ -52,7 +52,7 @@ export default function Home() {
           <p className="ease-in-out duration-300 transition group-hover:opacity-0 opacity-1 font-moderniz text-enacblk absolute flex justify-center items-center text-center h-[100%] w-[100%]">
             UPLIFT
           </p>
-          <p className="text-xs ease-in-out duration-300 transition opacity-0 group-hover:opacity-100 font-montserrat flex absolute text-enacblk justify-center items-center text-center h-[100%] w-[100%] px-4 bg-cover">
+          <p className="text-xl ease-in-out duration-300 transition opacity-0 group-hover:opacity-100 font-montserrat flex absolute text-enacblk justify-center items-center text-center h-[100%] w-[100%] px-4 bg-cover">
             Elevating lives and fostering hope—at Enactus, we empower
             communities to overcome challenges through innovative, sustainable
             solutions, paving the way for shared progress and brighter futures.
@@ -62,7 +62,7 @@ export default function Home() {
           <p className="ease-in-out duration-300 transition group-hover:opacity-0 opacity-1 font-moderniz text-[#FFC000] absolute flex justify-center items-center text-center h-[100%] w-[100%]">
             ENACT
           </p>
-          <p className="text-xs ease-in-out duration-300 transition opacity-0 group-hover:opacity-100 font-montserrat flex absolute text-white justify-center items-center text-center h-[100%] w-[100%] px-4 bg-cover">
+          <p className="text-xl ease-in-out duration-300 transition opacity-0 group-hover:opacity-100 font-montserrat flex absolute text-white justify-center items-center text-center h-[100%] w-[100%] px-4 bg-cover">
             Turning ideas into impact—Enactus transforms challenges into
             opportunities with purpose-driven actions, blending entrepreneurship
             and social commitment to drive meaningful change.
@@ -72,7 +72,7 @@ export default function Home() {
           <p className="ease-in-out duration-300 transition group-hover:opacity-0 opacity-1 font-moderniz text-enacblk absolute flex justify-center items-center text-center h-[100%] w-[100%]">
             ADVANCE
           </p>
-          <p className="text-xs ease-in-out duration-300 transition opacity-0 group-hover:opacity-100 font-montserrat flex absolute text-enacblk justify-center items-center text-center h-[100%] w-[100%] px-4 bg-cover">
+          <p className="text-xl ease-in-out duration-300 transition opacity-0 group-hover:opacity-100 font-montserrat flex absolute text-enacblk justify-center items-center text-center h-[100%] w-[100%] px-4 bg-cover">
             Building tomorrow today—Enactus advances communities through
             innovation, mentorship, and leadership, equipping changemakers to
             shape a resilient, sustainable future.
