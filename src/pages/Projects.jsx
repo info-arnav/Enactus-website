@@ -203,7 +203,7 @@ export default function Projects() {
                   >
                     <i className="fa-brands fa-instagram text-pink-400"></i>
                   </a>
-                  <a href="https://annotsav.vercel.app/" target="_blank">
+                  <a href="https://annotsav.myshopify.com/" target="_blank">
                     <i className="fa-solid fa-up-right-from-square"></i>
                   </a>
                 </div>
