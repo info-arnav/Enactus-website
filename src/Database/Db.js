@@ -13,7 +13,7 @@ export const Presidents = [
   export const VicePresidents = [
     {
       name: "Medhaansh Juneja",
-      image:"/Heads/medhaansh.HEIC",
+      image:"/Heads/medhaansh.jpg",
       position:"center"
     },
     {
@@ -49,7 +49,7 @@ export const Presidents = [
   export const Technical  = [
     {
       name: "Amaan Ali",
-      image:"/Heads/amaan.jpeg",
+      image:"/Heads/Amaan.jpg",
       position:"center"
     },
     {
@@ -75,7 +75,7 @@ export const Presidents = [
   export const Promotions  = [
     {
       name: "Taniya Maheshwari",
-      image:"/Heads/taniya.jpg",
+      image:"/Heads/taniya.jpeg",
       position:"center"
     }
   ];
@@ -83,6 +83,6 @@ export const Presidents = [
     {
       name: "Ayush Kumar",
       image:"/Heads/ayush.jpg",
-      position:"center"
+      position:"top"
     }
   ];
