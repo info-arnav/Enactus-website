@@ -7,7 +7,7 @@ export const Presidents = [
     {
       name: "Garv Mittal",
       image:"/Heads/garv.jpg",
-      position:"bottom"
+      position:"center"
     }
   ];
   export const VicePresidents = [
