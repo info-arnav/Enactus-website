@@ -34,7 +34,7 @@ export const Presidents = [
   ];
   export const DirectorFinance  = [
     {
-      name: "Shivam Nirulas",
+      name: "Shivam Narula",
       image:"/Heads/shivam.jpg",
       position:"center"
     }
